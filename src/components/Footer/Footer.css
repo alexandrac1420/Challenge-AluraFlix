@@ -1,0 +1,25 @@
+.footer{
+    background-color: #262626;
+    box-shadow: 0px 5px 29px rgba(34, 113, 209, 1);
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.footer img{
+    width: 167px;
+    height: 40px;
+}
+
+.botones_{
+    display:none;
+}
+
+@media (max-width: 768px) {
+    .footer img{
+        display:none;
+    }
+    .botones_{
+        display:flex;
+        justify-content: center;
+    }
+}

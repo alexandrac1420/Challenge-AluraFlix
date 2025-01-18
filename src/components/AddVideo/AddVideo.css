@@ -1,0 +1,30 @@
+.add-video-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    max-width: 300px;
+    margin: auto;
+}
+
+.add-video-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.add-video-form button {
+    background-color: #00b4d8;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-video-form button:hover {
+    opacity: 0.8;
+}
