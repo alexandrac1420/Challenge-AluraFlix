@@ -12,7 +12,7 @@ function App() {
     const [videos, setVideos] = useState([]); 
 
     useEffect(() => {
-        fetch("https://bdl3g911-5000.use2.devtunnels.ms/videos")
+        fetch("http://localhost:5000/videos")
             .then((response) => response.json())
             .then((data) => setVideos(data))
             .catch((error) => console.error("Error al cargar los videos:", error));
@@ -29,7 +29,7 @@ function App() {
     const handleAddVideo = (newVideo) => {
         setVideos((prevVideos) => [...prevVideos, newVideo]);
 
-        fetch("https://bdl3g911-5000.use2.devtunnels.ms/videos", {
+        fetch("http://localhost:5000/videos", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(newVideo),

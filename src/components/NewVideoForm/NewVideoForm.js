@@ -26,7 +26,7 @@ function NewVideoForm({ onAddVideo }) {
             ...formData,
         };
 
-        fetch("https://bdl3g911-5000.use2.devtunnels.ms/videos", {
+        fetch("http://localhost:5000/videos", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(newVideo),

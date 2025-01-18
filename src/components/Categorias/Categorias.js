@@ -10,7 +10,7 @@ function Categorias() {
     const [currentVideo, setCurrentVideo] = useState(null);
 
     useEffect(() => {
-        fetch("https://bdl3g911-5000.use2.devtunnels.ms/videos")
+        fetch("http://localhost:5000/videos")
             .then((response) => {
                 if (!response.ok) {
                     throw new Error("Error al obtener los datos");
@@ -36,9 +36,9 @@ function Categorias() {
 
     const handleDelete = (id) => {
         console.log(`Intentando eliminar el video con ID: ${id}`);
-        console.log(`URL completa: https://bdl3g911-5000.use2.devtunnels.ms/videos?id=${id}`);
+        console.log(`URL completa: http://localhost:5000/videos?id=${id}`);
 
-        fetch(`https://bdl3g911-5000.use2.devtunnels.ms/videos/${id}`, {
+        fetch(`http://localhost:5000/videos/${id}`, {
             method: "DELETE",
         })
             .then((response) => {
